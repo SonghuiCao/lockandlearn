@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFlashCards">
+
+    <ImageView
+        android:id="@+id/lockimage"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="locklogo"
+        app:srcCompat="@drawable/padlock" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:layout_below="@id/lockimage"
+    android:layout_centerHorizontal="true"
+        android:text="Create Flash Cards"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/createdeck"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Create Deck" />
+
+    <Button
+        android:id="@+id/editdeck"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createdeck"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Edit Deck" />
+
+</RelativeLayout>
