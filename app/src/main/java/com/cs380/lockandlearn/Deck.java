@@ -4,16 +4,28 @@ import androidx.annotation.*;
 
 import java.util.List;
 
-@Entity(tableName = "deck_table")
+// Define Deck data entities
+@Entity
 public class Deck {
     @PrimaryKey
     @NonNull
-    @ColumnInfo(name = "deck")
+    public String deckName;
 
-    // We probably want to use a different data type here,
-    // List is just placeholder for now.
-    private List<String> mDeck;
+    @ColumnInfo(name = "category")
+    private String category;
 
-    public Deck(@NonNull List<String> deck) {this.mDeck = deck;}
-    public List<String> getDeck() {return this.mDeck;}
+    @ColumnInfo
+    private int deckSize;
+
+    // Constructor
+    public Deck(@NonNull String deck, String category)
+    {
+        this.deckName = deckName;
+        this.category = category;
+    }
+
+    // Getter methods
+    public String getDeckName() {return this.deckName;}
+
+    // public String getDeckCategory()
 }
