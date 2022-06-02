@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/yellow_crumpled"
-    android:id="@+id/popuplayout">
+    android:background="@drawable/plain_flashcard"
+    android:id="@+id/popuplayout"
+    >
 
     <TextView
         android:text="@string/question"
@@ -15,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_height="match_parent"
+
         android:visibility="visible"/>
 
     <TextView
@@ -26,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_height="match_parent"
-        android:clickable="true"
+
         android:visibility="invisible"/>
 
 </RelativeLayout>
