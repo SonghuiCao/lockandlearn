@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDeck">
+
+     <TextView
+        android:id="@+id/editdecktext"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Deck"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35sp" />
+
+
+    <ListView
+        android:id="@+id/selectdeck"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editdecktext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editdeck"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/selectdeck"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" />
+    <Button
+        android:id="@+id/savedeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editdeck"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="edit"
+        android:text="Confirm Edit"
+        />
+
+</RelativeLayout>
