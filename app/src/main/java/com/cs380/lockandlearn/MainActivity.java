@@ -11,7 +11,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button playflashcardsbutton;
     private Button createflashcardsbutton;
-    private Button settingsbutton;
+    private Button editflashcardsbutton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,26 +31,38 @@ public class MainActivity extends AppCompatActivity {
         playflashcardsbutton = findViewById(R.id.playflashcardsbutton);
         playflashcardsbutton.setOnClickListener(fc -> openPlayFC());
 
+
         createflashcardsbutton = findViewById(R.id.createflashcardsbutton);
         createflashcardsbutton.setOnClickListener(fc -> openCreateFC());
 
-        settingsbutton = findViewById(R.id.settingsbutton);
-        settingsbutton.setOnClickListener(fc -> openSettingsFC());
+        editflashcardsbutton =findViewById(R.id.editflashcarddeck);
+        editflashcardsbutton.setOnClickListener(fc -> openEditFC());
+
+        //settingsbutton = findViewById(R.id.settingsbutton);
+        //settingsbutton.setOnClickListener(fc -> openSettingsFC());
 
 
     }
-    public void openCreateFC(){
-        Intent intent = new Intent(this, CreateFlashCards.class);
+
+    public void openEditFC(){
+        Intent intent = new Intent(this, EditDeck.class);
         startActivity(intent);
     }
     public void openPlayFC(){
         Intent intent = new Intent(this, PlayFlashCards.class);
-                startActivity(intent);
+        startActivity(intent);
+    }
+    public void openCreateFC(){
+        Intent intent = new Intent(this, CreateDeck.class);
+        startActivity(intent);
     }
 
-    public void openSettingsFC(){
+
+    /*public void openSettingsFC(){
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
+    */
+
 
 }
