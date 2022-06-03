@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lockandlearn">
+        <activity
+            android:name=".EditDeck"
+            android:exported="false" />
+
         <receiver
             android:name=".PopupReciever"
             android:enabled="true"
             android:exported="true">
-
             <intent-filter>
-                <action android:name="android.intent.action.USER_PRESENT"></action>
+                <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
-        
+
         <activity
             android:name=".FlashCardPopup"
             android:theme="@style/popUp" />
-
         <activity
             android:name=".CreateDeck"
             android:exported="false" />
@@ -36,12 +38,15 @@
         <activity
             android:name=".PlayFlashCards"
             android:exported="false" />
-
+        <activity
+            android:name=".SelectDeck"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
