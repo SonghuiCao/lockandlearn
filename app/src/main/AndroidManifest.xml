@@ -18,7 +18,20 @@
                 <action android:name="android.intent.action.USER_PRESENT"></action>
             </intent-filter>
         </receiver>
-        
+
+        <receiver
+            android:name=".MyAdmin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
+            <meta-data android:name="android.app.device_admin"
+                android:resource="@xml/policies" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+
+        </receiver>
+
         <activity
             android:name=".FlashCardPopup"
             android:theme="@style/popUp" />
@@ -35,6 +48,9 @@
             android:label="@string/title_activity_create_flash_cards" />
         <activity
             android:name=".PlayFlashCards"
+            android:exported="false" />
+        <activity
+            android:name=".LockingFeatures"
             android:exported="false" />
 
         <activity

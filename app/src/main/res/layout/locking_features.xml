@@ -16,52 +16,31 @@
         android:contentDescription="locklogo"
         app:srcCompat="@drawable/padlock" />
 
-    <TextView
-        android:id="@+id/title"
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/lockimage"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="50dp"
-        android:text="Lock and Learn"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="35sp" />
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Lock the Phone" />
 
     <Button
-        android:id="@+id/playflashcardsbutton"
+        android:id="@+id/enableBtn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title"
+        android:text="Enable lock screen"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/darker_gray"
-        android:text="Play Flash Cards" />
+        android:layout_below="@id/lock"/>
+
     <Button
-        android:id="@+id/createflashcardsbutton"
-        android:layout_below="@id/playflashcardsbutton"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/darker_gray"
+        android:id="@+id/disableBtn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text = "Create Flash Cards"/>
-    <Button
-        android:id="@+id/lockingfeaturesbutton"
-        android:layout_below="@id/createflashcardsbutton"
+        android:text="Disable lock screen"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/darker_gray"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text = "Locking Features"/>
-    <Button
-        android:id="@+id/settingsbutton"
-        android:layout_below="@id/lockingfeaturesbutton"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/darker_gray"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text = "Settings"/>
-
-
-
-
+        android:layout_below="@id/enableBtn"/>
 
 </RelativeLayout>

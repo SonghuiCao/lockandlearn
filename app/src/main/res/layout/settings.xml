@@ -16,6 +16,7 @@
         app:srcCompat="@drawable/padlock" />
 
     <TextView
+        android:id="@+id/settings"
         android:paddingTop="50dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -24,5 +25,18 @@
         android:text="Settings"
         android:textColor="@android:color/darker_gray"
         android:textSize="35sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:textStyle="bold"
+        android:id="@+id/switchCompat"
+        android:text="@string/text"
+        android:textSize="20dp"
+        android:padding="10dp"
+        app:switchPadding="10dp"
+        android:checked="false"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings"/>
 
 </RelativeLayout>
