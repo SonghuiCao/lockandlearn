@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Lock and Learn"
         android:textColor="@android:color/darker_gray"
         android:textSize="35sp" />
@@ -33,24 +33,29 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
         android:backgroundTint="@android:color/darker_gray"
         android:text="Play Flash Cards" />
+
     <Button
         android:id="@+id/createflashcardsbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
         android:layout_below="@id/playflashcardsbutton"
-        android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/darker_gray"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text = "Create Flash Cards"/>
+        android:text="Create Flash Cards" />
+
     <Button
-        android:id="@+id/settingsbutton"
-        android:layout_below="@id/createflashcardsbutton"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/darker_gray"
+        android:id="@+id/editflashcarddeck"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text = "Settings"/>
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/createflashcardsbutton"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Edit FlashCard Deck" />
+
 
 
 </RelativeLayout>

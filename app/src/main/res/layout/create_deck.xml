@@ -6,38 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".CreateDeck">
 
-
+    <ImageView
+        android:id="@+id/lockimage"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="locklogo"
+        app:srcCompat="@drawable/padlock" />
+    <TextView
+        android:id ="@+id/title"
+        android:layout_below="@id/lockimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Deck"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35sp" />
 
     <EditText
-        android:id="@+id/input_text"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:paddingTop="50dp"
-        />
+        android:id="@+id/input_deck_name"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="enter deck name here" />
+
+    <EditText
+        android:id="@+id/input_question"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_deck_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="enter question here" />
+
+    <EditText
+        android:id="@+id/input_answer"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="enter answer here" />
+
 
     <Button
         android:id="@+id/savedeck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_text"
+        android:layout_below="@id/input_answer"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/darker_gray"
         android:onClick="save"
-        android:text="Save Card"
+        android:text="Save Deck"
         />
 
-    <Button
-        android:id="@+id/loaddeck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/savedeck"
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/darker_gray"
-        android:onClick="load"
-        android:text="Load Card"
-        />
 
 
 

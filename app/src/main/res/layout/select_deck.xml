@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDeck">
+
+
+    <ImageView
+        android:id="@+id/lockimage"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="locklogo"
+        app:srcCompat="@drawable/padlock" />
+
+    <TextView
+        android:id="@+id/selectdecktext"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lockimage"
+        android:text="Select Deck"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35sp" />
+
+
+    <ListView
+        android:id="@+id/selectdeck"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selectdecktext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/deckname"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/selectdeck"
+        android:gravity="center"
+        android:text="deck name"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+
+
+
+
+
+
+</RelativeLayout>

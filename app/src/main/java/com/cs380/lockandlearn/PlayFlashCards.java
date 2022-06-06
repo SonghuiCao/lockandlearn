@@ -62,12 +62,21 @@ public class PlayFlashCards extends AppCompatActivity {
         showFlashCard = (TextView) findViewById(R.id.flashCardText); //put showFlashCard Textview into flashCardText view.
 
         Button play = (Button) findViewById(R.id.play); //initialize play button.
+        Button selectDeck = (Button) findViewById(R.id.selectdeck);
+
 
         // on click
         play.setOnClickListener(new View.OnClickListener(){  //set onlicklistener for play button.
 
             public void onClick(View v){
                 startActivity(new Intent (PlayFlashCards.this, FlashCardPopup.class)); //start flashcardpopup when clicked.
+            }
+        });
+
+        selectDeck.setOnClickListener(new View.OnClickListener(){  //set onlicklistener for selectdeck button.
+
+            public void onClick(View v){
+                startActivity(new Intent (PlayFlashCards.this, SelectDeck.class)); //start selectdeck when clicked.
             }
         });
 

@@ -5,12 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PlayFlashCards" >
+
+    <ImageView
+        android:id="@+id/lockimage"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="locklogo"
+        app:srcCompat="@drawable/padlock" />
+
     <TextView
         android:id ="@+id/title"
         android:layout_centerHorizontal="true"
-        android:paddingTop="50dp"
+        android:paddingTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/lockimage"
         android:text="Play Flash Cards"
         android:textColor="@android:color/darker_gray"
         android:textSize="35sp" />
@@ -22,6 +33,7 @@
         android:layout_height="wrap_content"
         android:height="350dp"
         android:width="350dp"
+        android:paddingTop="20dp"
         android:layout_below="@id/title"
         android:textColor="@android:color/darker_gray"
         android:textSize="15sp" />
@@ -33,11 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/flashCardText"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@android:color/darker_gray"
         android:text="Play"
 
-         />
+        />
 
     <Button
         android:id="@+id/selectdeck"
