@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <ImageView
+        android:id="@+id/lockimage"
+        android:layout_width="199dp"
+        android:layout_height="255dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="locklogo"
+        app:srcCompat="@drawable/padlock" />
+
+    <Button
+        android:id="@+id/lock"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lockimage"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Lock the Phone" />
+
+    <Button
+        android:id="@+id/enableBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Enable lock screen"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_below="@id/lock"/>
+
+    <Button
+        android:id="@+id/disableBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Disable lock screen"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_below="@id/enableBtn"/>
+
+</RelativeLayout>

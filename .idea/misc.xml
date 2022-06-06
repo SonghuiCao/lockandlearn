@@ -3,8 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/content_create_flash_cards.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/create_deck.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/create_flash_cards.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/flashcardwindow.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/fragment_first.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/fragment_second.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/locking_features.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/play_flash_cards.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout-land/settings.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/LockingFeatures.xml" value="0.1" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/content_create_flash_cards.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/create_deck.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/create_flash_cards.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/flashcardwindow.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/locking_features.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/play_flash_cards.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/lockandlearn2/app/src/main/res/layout/settings.xml" value="0.25416666666666665" />
       </map>
     </option>
